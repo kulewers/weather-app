@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top-bar">
+    <form id="search" role="search">
+      <label for="location-input">Choose your location:</label>
+      <div class="search-box">
+        <input type="search" placeholder="London" id="location-input">
+        <button>Query Data</button>
+      </div>
+    </form>
+
+    <button id="ch-format">
+      Change temperature format
+    </button>
+  </div>
+   
+  <div class="current-data">
+    <div id="main">
+      <p id="location"></p>
+      <p id="location-country"></p>
+      <h1 id="current-temp"></h1>
+      <p id="current-cond"></p>
+    </div>
+  </div>
+</body>
+</html>
